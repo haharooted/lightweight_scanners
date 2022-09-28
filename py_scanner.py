@@ -9,7 +9,7 @@ def scan_for_ports(name, first_port, max_port):
     try:
         for port in range(first_port, max_port):
             if (port - 1) == max_port - 1:
-                print(name, "finishing...")
+                print(name, "Finishing...")
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             socket.setdefaulttimeout(1)
             result = s.connect_ex((targeted_ip, port))
@@ -22,7 +22,7 @@ def scan_for_ports(name, first_port, max_port):
 
 
 if __name__ == '__main__':
-    first_port = int(input('First port ->'))
+    first_port = int(input('First port -> '))
     last_port = int(input('Last port -> '))
     targeted_ip = input('IP target -> ')
     threads_count = int(input('Threads -> '))
