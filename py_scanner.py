@@ -2,7 +2,6 @@ import sys
 import threading
 import socket
 from datetime import datetime
-from tkinter import E
 
 ports_available = []
 
