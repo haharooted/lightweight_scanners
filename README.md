@@ -1,2 +1,2 @@
-# lightweight_portscanners
+# lightweight_scanners
 ... sometimes you don't have nmap
